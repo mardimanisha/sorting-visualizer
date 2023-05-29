@@ -1,0 +1,147 @@
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 5px;
+    color: #fff;
+    }
+    
+    .navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    .navbar-text {
+    margin-left: 20px;
+    }
+    
+    .navbar-text a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    /* Container */
+    .container {
+    max-width: 800px;
+    margin: 10px auto;
+    }
+
+    #sorting-container {
+        margin: 5px;
+    }
+    
+    /* Sorting Visualizer */
+    #sorting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    }
+    
+    /* Controls */
+    .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    
+    .control-group {
+    margin-bottom: 5px;
+    }
+    
+    .control-group label {
+    margin-right: 10px;
+    }
+    
+    .button-group {
+    display: flex;
+    gap: 10px;
+    }
+    
+    .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+    
+    .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    }
+    
+    /* Sorting Algorithms /
+    /.sorting-algorithms {
+    margin-bottom: 5px;
+    } */
+    
+    .algorithm-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    cursor: pointer;
+    }
+    
+    .algorithm-btn:hover {
+    background-color: #333;
+    color: #fff;
+    }
+    
+    .algorithm-btn:focus {
+    outline: none;
+    }
+
+    #controls-container{
+        position: fixed;
+        bottom: 5px;
+    }
+    
+    /* Additional Styling */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100vh;
+    }
+    
+    /* Style for the bar elements */
+    .bar {
+    display: inline-block;
+    background-color: #2196F3;
+    width: 10px;
+    margin: 0 1px;
+    transition: height 0.2s;
+    position: relative;
+    }
+    
+    /* Add additional styles to make the bars visually appealing */
+    .bar:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: white;
+    }
+    
+    /* Add styles to highlight the selected bars */
+    .bar.selected {
+    background-color: #FF5722;
+    }
+    
+    /* Add styles to highlight the sorted bars */
+    .bar.sorted {
+    background-color: #4CAF50;
+    }
+    
+    
+    
+    
+    
+    
+    

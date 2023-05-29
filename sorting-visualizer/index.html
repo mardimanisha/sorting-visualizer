@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" class="navbar-brand">Sorting Visualizer</a>
+      <span class="navbar-text">
+        <a href="https://github.com/AdityaPrakash-26/Sorting-Visualizer-v2"
+          >Source Code</a
+        >
+      </span>
+    </div>
+
+    <div class="container">
+      <div id="sorting-container">
+        <div id="sorting" class="flex-container"></div>
+      </div>
+
+      <div id="controls-container">
+        <div class="controls">
+          <div class="control-group">
+            <label for="size_input">Size:</label>
+            <input id="size_input" type="range" value="50" min="1" max="50" />
+          </div>
+
+          <div class="control-group">
+            <label for="speed_input">Speed:</label>
+            <input
+              id="speed_input"
+              type="range"
+              min="20"
+              max="300"
+              value="60"
+            />
+          </div>
+          <div class="button-group">
+            <button type="button" class="btn" id="new_array_btn">
+              New Array
+            </button>
+            <button type="button" class="btn" id="stop_btn" disabled="true">
+              Stop Sorting
+            </button>
+          </div>
+        </div>
+        <div class="sorting-algorithms">
+          <div class="button-group">
+            <button
+              type="button"
+              class="btn algorithm-btn"
+              id="bubble_sort_btn"
+            >
+              Bubble Sort
+            </button>
+            <button type="button" class="btn algorithm-btn" id="merge_sort_btn">
+              Merge Sort
+            </button>
+            <button
+              type="button"
+              class="btn algorithm-btn"
+              id="selection_sort_btn"
+            >
+              Selection Sort
+            </button>
+            <button type="button" class="btn algorithm-btn" id="quick_sort_btn">
+              Quick Sort
+            </button>
+            <button
+              type="button"
+              class="btn algorithm-btn"
+              id="insertion_sort_btn"
+            >
+              Insertion Sort
+            </button>
+            <button type="button" class="btn algorithm-btn" id="heap_sort_btn">
+              Heap Sort
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="sorting.js"></script>
+    <script src="algorithms/bubbleSort.js"></script>
+    <script src="algorithms/heapSort.js"></script>
+    <script src="algorithms/insertionSort.js"></script>
+    <script src="algorithms/mergeSort.js"></script>
+    <script src="algorithms/quickSort.js"></script>
+    <script src="algorithms/selectionSort.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
